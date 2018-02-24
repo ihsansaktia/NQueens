@@ -1,6 +1,6 @@
-# Define boardsize and initialize board
-boardSize = 8
-board = [[0]*boardSize for _ in range(boardSize)]
+# =========
+# Functions
+# =========
 
 # Function to check if it is possible to place the Queen
 def isSafe(row, col):
@@ -61,7 +61,17 @@ def solve(nQueen, row):
 		return 0
 
 if __name__ == "__main__":
+	# Define boardsize and initialize board
+	# Note that the size of the board equivalent with the number of Queens
+	boardSize = int(input("Number of Queens: "))
+
+	# Silently set number of Queens if it is less than 1
+	boardSize = max(boardSize, 1)
+
+	# Setting up the board
+	board = [[0]*boardSize for _ in range(boardSize)]
+
 	if solve(boardSize, 0):
 		printBoard()
 	else:
-		print("No solution")
+		print("No solution for {} Queens".format(boardSize))
