@@ -1,5 +1,5 @@
 # NQueens
-### N Queens solver
+### N Queens Solver
 
 Explanation of ~~N~~ 8 Queens can be found [here](https://en.wikipedia.org/wiki/Eight_queens_puzzle)
 
