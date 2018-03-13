@@ -59,7 +59,10 @@ def solve(nQueen, row):
 					board[row][i] = 0
 
 		return 0
-
+		
+# ============
+# Main Program
+# ============
 if __name__ == "__main__":
 	# Define boardsize and initialize board
 	# Note that the size of the board equivalent with the number of Queens
